@@ -1,8 +1,4 @@
-:root {
-    /* Circle scales with the window: never larger than 400px, 30% of the width, or 60% of the height */
-    --circle-size: min(400px, 30vw, 60vh);
-}
-
+<<<<<<< HEAD
 .container {
     display: flex;
 }
@@ -13,9 +9,6 @@
     background-color: lightblue;
     font-family:'Courier New', Courier, monospace;
     text-align: center;
-    box-sizing: border-box;
-    /* keep text clear of the circle on the right side */
-    padding: 0 0 0 10px;
 }
 
 .volunteers {
@@ -24,24 +17,11 @@
     background-color: lightgreen;
     font-family:'Courier New', Courier, monospace;
     text-align: center;
-    box-sizing: border-box;
-    /* keep text clear of the circle on the left side */
-    padding: 0 10px 0 0;
-}
-
-.campers h1,
-.volunteers h1 {
-    font-size: clamp(20px, 3.5vw, 50px);
-}
-
-.campers h2,
-.volunteers h2 {
-    font-size: clamp(14px, 2vw, 24px);
 }
 
 .circle {
-    width: var(--circle-size);
-    height: var(--circle-size);
+    width: 400px;
+    height: 400px;
     background-color: white;
     border-radius: 50%;
     position: absolute;
@@ -51,13 +31,52 @@
 }
 
 .k {
-    width: calc(var(--circle-size) * 0.75);
-    height: calc(var(--circle-size) * 0.75);
+    width: 300px;
+    height: 300px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+=======
+.container {
+    display: flex;
 }
 
+.campers {
+    width: 50%;
+    height: 100vh;
+    background-color: lightblue;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+}
 
+.volunteers {
+    width: 50%;
+    height: 100vh;
+    background-color: lightgreen;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.circle {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.k {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+>>>>>>> 89b3f3cdf352b666f851ff3caae7b6454d3f80d4
+}
