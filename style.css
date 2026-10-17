@@ -8,6 +8,13 @@
     background-color: lightblue;
     font-family:'Courier New', Courier, monospace;
     text-align: center;
+    z-index: 1;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: -5px 0px 7px rgba(0, 0, 0, 0.3);
+}
+
+.campers:hover {
+    transform: scale(0.95);
 }
 
 .volunteers {
@@ -16,6 +23,14 @@
     background-color: lightgreen;
     font-family:'Courier New', Courier, monospace;
     text-align: center;
+    z-index: 1;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.volunteers:hover {
+    transform: scale(0.95);
 }
 
 .circle {
@@ -27,6 +42,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
 .k {
@@ -36,5 +52,5 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: 3;
 }
