@@ -1,3 +1,8 @@
+:root {
+    /* Circle scales with the window: never larger than 400px, 30% of the width, or 60% of the height */
+    --circle-size: min(300px, 30vw, 60vh);
+}
+
 .container {
     display: flex;
 }
@@ -6,7 +11,8 @@
     width: 50%;
     height: 100vh;
     background-color: lightblue;
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Roboto', sans-serif;
+    color:azure;
     text-align: center;
     z-index: 1;
     transition: transform 0.2s ease-in-out;
@@ -21,11 +27,12 @@
     width: 50%;
     height: 100vh;
     background-color: lightgreen;
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Roboto', sans-serif;
     text-align: center;
     z-index: 1;
     transition: transform 0.2s ease-in-out;
     box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
+    color:azure;
     
 }
 
@@ -33,9 +40,21 @@
     transform: scale(0.95);
 }
 
+.campers h1,
+.volunteers h1 {
+    font-weight: normal;
+    font-size: clamp(30px, 4vw, 100px);
+}
+
+.campers h2,
+.volunteers h2 {
+    font-weight: normal;
+    font-size: clamp(24px, 3vw, 40px);
+}
+
 .circle {
-    width: 400px;
-    height: 400px;
+    width: var(--circle-size);
+    height: var(--circle-size);
     background-color: white;
     border-radius: 50%;
     position: absolute;
@@ -46,11 +65,11 @@
 }
 
 .k {
-    width: 300px;
-    height: 300px;
+    width: calc(var(--circle-size) * 0.75);
+    height: calc(var(--circle-size) * 0.75);
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 3;
+    z-index: 5;
 }

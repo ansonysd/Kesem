@@ -1,25 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kesem at BU</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="container">
             <img src="images/KesemK.svg" class="k">
             <div class="circle"></div>
             <div class="campers">
-                <h1 style="font-size:50px;">Prospective Families</h1>
+                <h1>Prospective Families</h1>
                 <h2>Interested in joining Kesem?</h2>
-                <p>Get Started</p>
+                <button type="button">Get Started</button>
             </div>
 
             <div class="volunteers">
-                <h1 style="font-size:50px;">Volunteers</h1>
+                <h1>Volunteers</h1>
                 <h2>Interested in volunteering for Kesem?</h2>
-                <p>Get Started</p>
+                <button type="button">Get Started</button>
             </div>
         </div>
+
+        <style>
+        .volunteers {
+        background-image:
+        linear-gradient(rgba(0, 193, 137, 0.6), rgba(0, 193, 137, 0.6)),
+        url(images/VolunteerSide.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right center;
+        }
+        .campers {
+        background-image:
+        linear-gradient(rgba(8, 92, 236, 0.6), rgba(8, 92, 236, 0.6)),
+        url(images/CamperSide.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        }
+        </style>
         <!--Sidebar once volunter/family is chosen:
             About us
             Donate
